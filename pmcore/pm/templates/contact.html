@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<div class="page-heading header-text">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Contact Us</h1>
+          <span>get in touch with us now!</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-information">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="contact-item">
+            <i class="fa fa-phone"></i>
+            <h4>Phone</h4>
+            <p>Let’s build something awesome together. Don’t hesitate to call us for any help!</p>
+            <a href="tel:068-949-7833">068-949-7833</a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="contact-item">
+            <i class="fa fa-envelope"></i>
+            <h4>Email</h4>
+            <p>We’d love to discuss your ideas and look forward to bring them to life!</p>
+            <a href="mailto:info@partagemontessori.ac.tz">info@partagemontessori.ac.tz</a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="contact-item">
+            <i class="fa fa-map-marker"></i>
+            <h4>Location</h4>
+            <p>MR88+528<br>Bukoba, Tanzania.</p>
+            <a href="https://www.google.co.tz/maps/place/Partage+Montessori+Teachers'+College/@-1.3345867,31.8129019,17z/data=!3m1!4b1!4m5!3m4!1s0x19d09763403934cb:0xebf4a5daed0b3c18!8m2!3d-1.3345921!4d31.8150906?hl=sw">View on Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="callback-form contact-us">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Interested in becoming <em>part of us</em> ?</h2>
+            <span>Send a message</span>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="contact-form">
+            <form id="contact" action="" method="get">
+              <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <fieldset>
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
+                  </fieldset>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <fieldset>
+                    <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
+                  </fieldset>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <fieldset>
+                    <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" required="">
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="filled-button">Send Message</button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="map">
+<!-- How to change your own map point
+  1. Go to Google Maps
+  2. Click on your location point
+  3. Click "Share" and choose "Embed map" tab
+  4. Copy only URL and paste it within the src="" field below
+-->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7360099417797!2d31.812901914459!3d-1.3345867360564698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19d09763403934cb%3A0xebf4a5daed0b3c18!2sPartage%20Montessori%20Teachers&#39;%20College!5e0!3m2!1sen!2stz!4v1648676248856!5m2!1sen!2stz" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+
+  <div class="partners contact-partners">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="owl-partners owl-carousel">
+            <div class="partner-item">
+              <img src="{% static 'assets/images/patner.svg'%}" alt="">
+            </div>
+            <div class="partner-item">
+              <img src="{% static 'assets/images/patner.svg'%}" alt="">
+            </div>
+            <div class="partner-item">
+              <img src="{% static 'assets/images/patner.svg'%}" alt="">
+            </div>
+            <div class="partner-item">
+              <img src="{% static 'assets/images/patner.svg'%}" alt="">
+            </div>
+            <div class="partner-item">
+              <img src="{% static 'assets/images/patner.svg'%}" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+{% endblock content %}
+    

@@ -1,0 +1,155 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<div class="page-heading header-text">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>News &amp; Events</h1>
+          <span>Latest Stories and updates from our college</span>
+        </div>
+    </div>
+    </div>
+</div>
+
+<section class="main-news">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="news-item">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-image">
+                  <img src="{% static 'assets/images/story 02.jpg'%}" alt="">
+                </div>
+              </div>
+              <div class="col-md-6 align-self-center">
+                <div class="right-text-content">
+                  <i class="fas fa-archive"></i>
+                  <h4>2022 AMI Annual Report</h4>
+                  <p>We report with immense pride on a year when flexibility, adaptability and creativity have carried our mission forward 
+                    at an accelerating pace under the most unpromising circumstances</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="news-item">
+            <div class="row">
+              <div class="col-md-6 align-self-center">
+                <div class="left-text-content">
+                  <i class="fas fa-archive"></i>
+                  <h4>Montessori as a Reading Intervention</h4>
+                  <p>In the recent edition of MontessoriPublic (Fall 2021) David Ayer and Angeline Lillard gave details on the availability 
+                    of rigorous studies showing reading/writing/language arts outcomes for students in Montessori schools versus other</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-image">
+                  <img src="{% static 'assets/images/story 05.jpg'%}" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="news-item last-news">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-image">
+                  <img src="{% static 'assets/images/story 06.jpg'%}" alt="">
+                </div>
+              </div>
+              <div class="col-md-6 align-self-center">
+                <div class="right-text-content">
+                  <i class="fas fa-archive"></i>
+                  <h4>Montessori Architecture</h4>
+                  <p>Montessori Architecture is a design instrument for learning environments. The project was seeded by Montessorian Hilla 
+                    Patell in the early 1990s when she asked for a few key architectural constituents of a Montessori school. Her question</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<div class="fun-facts">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="left-content">
+            <span>Partage Teachers College at a glance</span>
+            <h2>Our college admission<em> statistics</em></h2>
+            <p>More than 100 people applied for certificate-level study in 2021 and over 120 people applied for diploma-level study. PMTC usually has around 150 certificate places and about 200 diploma places each year.
+            <br><br>PMTC is committed to recruiting the best candidates from all backgrounds and all identities. The College is committed to fostering an inclusive culture which promotes equality and values diversity. For more information about our access programmes and how to apply, please see our admission pages.</p>
+            <a href="" class="filled-button">Admission</a>
+          </div>
+        </div>
+        <div class="col-md-6 align-self-center">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="count-area-content">
+                <div class="count-digit">945</div>
+                <div class="count-title">Work Hours</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="count-area-content">
+                <div class="count-digit">1280</div>
+                <div class="count-title">Student Numbers</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="count-area-content">
+                <div class="count-digit">178</div>
+                <div class="count-title">Staff Numbers</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="count-area-content">
+                <div class="count-digit">300</div>
+                <div class="count-title">College Alumn</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>    
+
+<div class="partners">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="owl-partners owl-carousel">
+        
+          <div class="partner-item">
+            <img src="{% static 'assets/images/patner.svg'%}" title="1" alt="">
+          </div>
+          
+          <div class="partner-item">
+            <img src="{% static 'assets/images/patner.svg'%}" title="2" alt="">
+          </div>
+          
+          <div class="partner-item">
+            <img src="{% static 'assets/images/patner.svg'%}" title="3" alt="">
+          </div>
+          
+          <div class="partner-item">
+            <img src="{% static 'assets/images/patner.svg'%}" title="4" alt="">
+          </div>
+          
+          <div class="partner-item">
+            <img src="{% static 'assets/images/patner.svg'%}" title="5" alt="">
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+{% endblock content %}
