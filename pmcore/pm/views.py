@@ -11,6 +11,7 @@ class ArticlesList(ListView):
     def get_context_data(self, **kwargs):
         context = super(ArticlesList, self).get_context_data(**kwargs)
         context['blogs']=Blog.objects.all()
+        context['explores']=Explore.objects.all()
         return context
 
 
