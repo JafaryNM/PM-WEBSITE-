@@ -67,45 +67,22 @@
           <span>Recent stories from around campus, published daily</span>
         </div>
       </div>
+      {% for blog in blogs  %}
       <div class="col-md-4">
-        <div class="service-item">
-          <img src="{% static 'assets/images/story 02.jpg'%}" alt="">
-          <div class="down-content">
-            <h4>2022 AMI Annual Report</h4>
-            <span style="color: #dcf09a;">Friday 8th April 2022</span>
-            <p>We report with immense pride on a year when flexibility, adaptability and creativity have carried our mission forward 
-               at an accelerating pace under the most unpromising circumstances...
-            </p>
-            <a href="" class="filled-button">Read More</a>
+        
+          <div class="service-item">
+            <img src="{{blog.image.url}}" alt="">
+            <div class="down-content">
+              <h4>{{blog.title}}</h4>
+              <span style="color: #dcf09a;">{{blog.date}}</span>
+              <p>{{blog.description}}</p>
+              <a href="" class="filled-button">Read More</a>
+            </div>
           </div>
-        </div>
+          
       </div>
-      <div class="col-md-4">
-        <div class="service-item">
-          <img src="{% static 'assets/images/story 05.jpg'%}" alt="">
-          <div class="down-content">
-            <h4>Montessori as a Reading Intervention</h4>
-            <span style="color: #dcf09a;">Tuesday 1st March 2022</span>
-            <p>In the recent edition of MontessoriPublic (Fall 2021) David Ayer and Angeline Lillard gave details on the availability 
-              of rigorous studies showing reading/writing/language...
-            </p>
-            <a href="" class="filled-button">Read More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="service-item">
-          <img src=" {% static 'assets/images/story 06.jpg'%}" alt="">
-          <div class="down-content">
-            <h4>Montessori Architecture</h4>
-            <span style="color: #dcf09a;">Wednesday 23rd February 2022</span>
-            <p>Montessori Architecture is a design instrument for learning environments. The project was seeded by Montessorian Hilla 
-              Patell in the early 1990s when she asked for a few key architectural...
-            </p>
-            <a href="" class="filled-button">Read More</a>
-          </div>
-        </div>
-      </div>
+      {% endfor %} 
+      
     </div>
   </div>
 </div>
