@@ -26,13 +26,14 @@ class Explore(models.Model):
   def __str__(self):
       return self.title
   
-  class Information(models.Model):
-      
-    work_hour=models.IntegerField();
-    numbers_student=models.IntegerField()
-    numbers_staff=models.IntegerField()
+class Admission(models.Model):
     
-    
-    def __str__(self):
-        return self.numbers_student
-    
+ work_hours=models.IntegerField()
+ number_students=models.IntegerField()
+ number_staff=models.IntegerField()
+ number_allumn=models.IntegerField()
+ 
+
+ def __str__(self):
+     
+     return self.work_hours

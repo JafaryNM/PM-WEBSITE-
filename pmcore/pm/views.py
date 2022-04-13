@@ -12,6 +12,7 @@ class ArticlesList(ListView):
         context = super(ArticlesList, self).get_context_data(**kwargs)
         context['blogs']=Blog.objects.all()
         context['explores']=Explore.objects.all()
+        context['admins']=Admission.objects.all()
         return context
 
 
